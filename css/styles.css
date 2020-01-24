@@ -1,0 +1,222 @@
+body {
+  font: 15px / 1.8 Arial, Helvetica, sans-seif;
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+} /* This was created for footer to stay bottom; */
+
+.content-wrap {
+  padding-bottom: 3rem;
+} /* This was created for footer to not 'eat away overflows'*/
+
+header {
+  background-color: #1976d2;
+  color: white;
+
+  padding-top: 20px;
+  min-height: 60px;
+  border-bottom: #d27519	 2px solid;
+}
+
+ul {
+/* Got rid of margin:0; to push the nav(s) lower a bit*/
+  padding: 0;
+}
+
+header ul {
+    list-style-type: none;
+} /* to get rid of bullet points from the nav bar*/
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px;
+}
+
+#nav-left {
+  float: left;
+}
+
+#nav-right {
+  float: right;
+}
+
+header .current a {
+  color: #76d219;
+  font-weight: bold;
+}
+
+/*** End of Header ***/
+
+/* index page */
+section.main {
+  text-align: center;
+}
+
+section.main h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+section.main input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  height: 25px;
+
+  margin-bottom: 20px;
+}
+
+section.main button {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 0 20px;
+  height: 38px;
+  border: 0;
+  background-color: #d21976;
+  color: white;
+}
+/* End of index page*/
+
+/* About Us page*/
+section.about-Us {
+  margin-bottom: 30px;
+}
+
+hr.aboutUs-seperator {
+  width: 80%;
+} /** This about this later
+  if you dont want this, increase
+  section.about-Us
+ **/
+
+.staffs .staff {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.staffs .staff img {
+  width: 100px;
+}
+
+.staffs .staff img.MD-img {
+  float:left;
+  margin-right: 10px;
+}
+
+.staffs .staff img.FD-img {
+  float:right;
+  margin-left: 10px;
+}
+
+.staffs .staff img.SD-img {
+  float:left;
+  margin-right: 10px;
+}
+
+.staffs .staff img.MrktD-img {
+  float:right;
+  margin-left: 10px;
+}
+
+/* End of About us page*/
+
+/* Contact Us page*/
+article.contactDetails {
+  float: left;
+  width: 30%;
+}
+
+article.contactDetails p {
+  margin: 0;
+}
+
+
+aside.sidebar {
+  float: right;
+  width: 60%;
+}
+
+.sidebarStyle {
+  background: #d21976;
+  color: white;
+
+  padding: 20px;
+}
+
+.messageForm label {
+  display: block; /* This to push down the edit box. Clear: Right doesn't work
+  clear is meant to be used with(or when using) Float, I think*/
+}
+
+.messageForm input, .messageForm textarea {
+  width: 95%;
+  padding: 5px;
+}
+
+.messageForm button {
+  display: block;
+  background-color: #76d219;
+  color: white;
+  height: 38px;
+  border: 0;
+
+  width: 50%;
+  padding: 0 20px;
+}
+/* End of Contact Us page*/
+
+/* Items Page */
+
+section.items .item{
+  width: 15%;
+  display: inline-block;
+
+  background-color: #76d219;
+  color: #d21976;
+
+  padding:5px;
+  margin: 10px 0;
+
+  text-align: center;
+}
+
+
+section.items .item img {
+  width: 120px;
+}
+
+/* End of Items Page*/
+
+/* Footer */
+footer {
+  background-color: #76d219;
+  color: white;
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+}
